@@ -8,6 +8,8 @@ from functools import reduce
 # print(sum)
 
 
+
+
 #
 # l=[1,2,3,4,5]
 # mul=reduce(lambda x,y:x*y,l)
