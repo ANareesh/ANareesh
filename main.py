@@ -154,6 +154,9 @@ import pandas as pd
 # else:
 #     print("not poly")
 
+
+
+
 #2method
 
 
