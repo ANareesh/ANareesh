@@ -8,10 +8,6 @@ from functools import reduce
 # print(sum)
 
 
-
-
-
-
 #
 # l=[1,2,3,4,5]
 # mul=reduce(lambda x,y:x*y,l)
@@ -1834,6 +1830,8 @@ from itertools import combinations
 #     else:
 #         d[v].append(k)
 # print(d)
+
+
 # n = "1234"
 # l = list(n)
 # res = []
@@ -1948,4 +1946,56 @@ from itertools import combinations
 # print(" ".join(map(str,res)))
 # max_elem = max([int("".join(elem)) for elem in res])
 # print(max_elem)
+
+
+################################################################################################
+
+
+# def bubble_sort(list1):
+#     for i in range(0, len(list1) - 1):
+#         for j in range(len(list1) - 1):
+#             if list1[j] > list1[j + 1]:
+#                 list1[j], list1[j + 1] = list1[j + 1], list1[j]
+#     return list1
+#
+#
+# list1 = [5, 3, 8, 6, 7, 2]
+# print("The unsorted list is: ", list1)
+# print("The sorted list is: ", bubble_sort(list1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 
