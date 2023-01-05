@@ -1949,4 +1949,6 @@ from itertools import combinations
 # max_elem = max([int("".join(elem)) for elem in res])
 # print(max_elem)
 
-hjkluythgrtyrtyj
+hjkluythg
+sadfgdsadfgh
+sdfgdsaasadfgh
