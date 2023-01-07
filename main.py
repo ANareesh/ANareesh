@@ -163,8 +163,8 @@ wertu
 properqqw
 qer
 wx
-
-exec random
+io
+import
 random
 
 
