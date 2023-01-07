@@ -160,11 +160,6 @@ import pandas as pd
 #2method
 
 
-assert
-wer
-errnoc
-bv
-vb
 
 
 
