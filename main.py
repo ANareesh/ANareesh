@@ -163,6 +163,9 @@ wertu
 properqqw
 qer
 wx
+nfh
+hsk
+qwerty
 
 
 
