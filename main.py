@@ -178,3 +178,72 @@ kiwetry
 # n=121
 # p=n
 # res=0
+# n=121
+# p=n
+# res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0
