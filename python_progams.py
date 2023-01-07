@@ -1659,7 +1659,7 @@ from functools import reduce
 #
 # d = '{"g":"a","n":"g","a":"d","r":"i"}'
 # json_to_dict(d)
-#
+
 # d = {'a': 2, "b": 3, "c": 4, "d": 3, "e": 3, "k": 1, "p": 0}
 # d1 = {}
 # for k,v in enumerate(d):
@@ -1784,6 +1784,7 @@ from functools import reduce
 
 #
 from itertools import combinations
+
 
 #
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -1945,6 +1946,10 @@ from itertools import combinations
 # max_elem = max([int("".join(elem)) for elem in res])
 # print(max_elem)
 
+sdfghj
+sdfgh
+sadfghsaadf
+hasattr(asdsfgh
 
 ################################################################################################
 
@@ -2033,3 +2038,5 @@ print(l)
 s=["c","d","a","b"]
 s.sort()
 print(s)
+        sdfhjk
+asdfghj)
