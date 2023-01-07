@@ -159,6 +159,10 @@ import pandas as pd
 
 #2method
 
+wertu
+proper
+qrt
+errno
 
 
 
