@@ -160,7 +160,15 @@ import pandas as pd
 #2method
 
 
-hellllllllll
+assert
+wer
+errnoc
+bv
+vb
+types
+bn
+from
+
 
 
 
