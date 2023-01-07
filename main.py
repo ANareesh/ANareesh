@@ -160,14 +160,12 @@ import pandas as pd
 #2method
 
 
-<<<<<<< HEAD
+
 hellllllllll
 asdfgddfghj
 dfgfhjkhgfds
 dfsdghjklhgfds
-=======
 
->>>>>>> 3d6e4c62e95930a3f67556686b01d5228502635b
 
 
 
