@@ -1473,7 +1473,6 @@ from functools import reduce
 #         maximum = l[i]
 # print(second_max)
 #
-#
 # def flat_list(l):
 #     res = []
 #     for i in l:
@@ -1660,7 +1659,7 @@ from functools import reduce
 #
 # d = '{"g":"a","n":"g","a":"d","r":"i"}'
 # json_to_dict(d)
-
+#
 # d = {'a': 2, "b": 3, "c": 4, "d": 3, "e": 3, "k": 1, "p": 0}
 # d1 = {}
 # for k,v in enumerate(d):
@@ -1785,7 +1784,6 @@ from functools import reduce
 
 #
 from itertools import combinations
-
 
 #
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -1964,38 +1962,74 @@ from itertools import combinations
 # print("The sorted list is: ", bubble_sort(list1))
 
 
+import pandas as pd
+
+# import pandas
+# df = pandas.read_csv('D:\\naresh_data\\IPL Ball-by-Ball 2008-2020.csv',index_col="ball")
+# print(df)
 
 
+# import csv
+#
+# with open('D:\\naresh_data\\IPL Ball-by-Ball 2008-2020.csv') as csv_file:
+#     csv_reader = csv.reader(csv_file)
+#     line_count = 0
+#     for row in csv_reader:
+#         if line_count == 0:
+#             print(f'Column names are {", ".join(row)}')
+#             line_count += 1
+#         else:
+#             pass
+#
 
 
+# def a(n):
+#     if n==0:
+#         return 1
+#     else:
+#        return n*a(n-1)
+# print(a(3))
 
 
+######################list programs
 
 
+l = ['1', '2', '3', '4', '5', '4', '3', '3', '6', '7', '8', '2']
+# len
+q = len(l)
+print(q)
+# type
+print(type(q))
+# append
+l.append(99)
+print(l)
+#  copy
+qqq = l.copy()
+print(qqq)
+# count
+w = l.count('3')
+print(w)
+# extend
+l1 = ["123", "145"]
+l.extend(l1)
+print(l)
+# index
+e = l.index("3")
+print(e)
+# insert
+l.insert(4,100)
+print(l)
+#pop
+o=l.pop()
+print(o)
+#remove
+l.remove("1")
+print(l)
+# reverse
+l.reverse()
+print(l)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-
+#sort
+s=["c","d","a","b"]
+s.sort()
+print(s)
