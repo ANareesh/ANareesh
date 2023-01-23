@@ -161,13 +161,6 @@ import pandas as pd
 
 
 
-hellllllllll
-asdfgddfghj
-dfgfhjkhgfds
-jicicekisqlm
-kiwetry
-
-
 
 
 
@@ -318,3 +311,12 @@ kiwetry
 # # # res=0# # res=0# n=121
 # # # p=n
 # # # res=0
+
+
+
+
+
+
+
+
+

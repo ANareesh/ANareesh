@@ -1785,7 +1785,6 @@ from functools import reduce
 #
 from itertools import combinations
 
-
 #
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # total = 10
@@ -1946,11 +1945,6 @@ from itertools import combinations
 # max_elem = max([int("".join(elem)) for elem in res])
 # print(max_elem)
 
-sdfghj
-sdfgh
-sadfghsaadf
-hasattr(asdsfgh
-
 ################################################################################################
 
 
@@ -1967,7 +1961,7 @@ hasattr(asdsfgh
 # print("The sorted list is: ", bubble_sort(list1))
 
 
-import pandas as pd
+# import pandas as pd
 
 # import pandas
 # df = pandas.read_csv('D:\\naresh_data\\IPL Ball-by-Ball 2008-2020.csv',index_col="ball")
@@ -1996,53 +1990,153 @@ import pandas as pd
 # print(a(3))
 
 
-######################list programs
+# ######################list programs
+#
+#
+# l = ['1', '2', '3', '4', '5', '4', '3', '3', '6', '7', '8', '2']
+# # len
+# q = len(l)
+# print(q)
+# # type
+# print(type(q))
+# # append
+# l.append(99)
+# print(l)
+# #  copy
+# qqq = l.copy()
+# print(qqq)
+# # count
+# w = l.count('3')
+# print(w)
+# # extend
+# l1 = ["123", "145"]
+# l.extend(l1)
+# print(l)
+# # index
+# e = l.index("3")
+# print(e)
+# # insert
+# l.insert(4,100)
+# print(l)
+# #pop
+# o=l.pop()
+# print(o)
+# #remove
+# l.remove("1")
+# print(l)
+# # reverse
+# l.reverse()
+# print(l)
+#
+# #sort
+# s=["c","d","a","b"]
+# s.sort()
+# print(s)
+#
+#
+# #tuple
+# #count
+# t = (1,2,3,4,5,4,5,6)
+# q=t.count(4)
+# print(q)
+#
+# #index
+# a=t.index(4)
+# print(a)
+
+#########list&tuple modified
+# l=[1,2,3,4,(1,2,),4]
+# l[-2][0]=1
+# print(l)
+############tuple &list modified
+# t=(1,2,3,4,[1,2,3,4])
+# t[-1][2]=9
+# print(t)
+##task
+# d={"a":1,"b":2,"c":3}
+#
+# for k,v in d.items():
+#     print(k,v)
 
 
-l = ['1', '2', '3', '4', '5', '4', '3', '3', '6', '7', '8', '2']
-# len
-q = len(l)
-print(q)
-# type
-print(type(q))
-# append
-l.append(99)
-print(l)
-#  copy
-qqq = l.copy()
-print(qqq)
-# count
-w = l.count('3')
-print(w)
-# extend
-l1 = ["123", "145"]
-l.extend(l1)
-print(l)
-# index
-e = l.index("3")
-print(e)
-# insert
-l.insert(4,100)
-print(l)
-#pop
-o=l.pop()
-print(o)
-#remove
-l.remove("1")
-print(l)
-# reverse
-l.reverse()
-print(l)
+# 2
+# l=[1,2,3,4]
+# l1=[5,6]
+# l.extend(l1)
+# print(l)
 
-#sort
-s=["c","d","a","b"]
-s.sort()
-print(s)
-        sdfhjk
-asdfghj)
+# d={"a":1,"b":2,"c":3,"v":4}
+# key=input()
+# for k,v in d.items():
+#     if k==key:
+#         print(key)
+#         break
+# print(key in d.keys())
 
 
-GangadriYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabali
+# def foo(temp=[]):
+#     temp.append("b")
+#     print(temp)
+# foo(["c"])
+# foo(["z"])
+#
+#
+# def hi(*args):
+#     sum=0
+#     for i in args:
+#         sum+=i
+#     return sum
+# print(hi(1,2,3,4))
 
-YarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabali
-Yarrabali
+# def hi(name=None,age=None):
+#     print(name,age)
+#
+# print(hi({"name":"p","age":"10","hi":"hee"}))
+
+
+# l = [1, 2, 3]
+# l1 = [3, 4, 5]
+#
+# add = []
+# sub = []
+# mul = []
+# for i in range(len(l)):
+#     add.append(l[0]+l1[0] + l[1] + l1[1] + l[2] + l1[2])
+#     sub.append((l[0]-l1[0]) - (l[1] - l1[1]) - (l[2] - l1[2]))
+#     mul.append((l[0] * l1[0]) * (l[1] * l1[1]) * (l[2] * l1[2]))
+# print(add[0])
+# print(sub[0])
+# print(mul[0])
+
+#
+# import pandas as pd
+#
+#
+# q=pd.read_csv("C://Users//DELL//Downloads//IPL Ball-by-Ball 2008-2020.csv")
+#
+# #print(q.to_string())
+#
+# ###################now applying groupby method
+#
+#
+# # name_column = q['ball']
+# # print(name_column)
+# print(q.to_string())
+#
+# # q.groupby(["batting_team","batsman_runs"])
+# #
+# # print(q.to_string())
+#
+
+def binary(a,b):
+    start =0
+    end=len(a)-1
+    while(start<=end):
+        mid =(start+end)//2
+        if (a[mid]>b):
+            end=mid-1
+        elif (a[mid]<b):
+            start =mid+1
+        else:
+            return mid
+print(binary([1,2,3,4,5],5))
