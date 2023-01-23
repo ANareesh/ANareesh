@@ -2031,4 +2031,5 @@ print(l)
 #sort
 s=["c","d","a","b"]
 s.sort()
-print(s)
+
+

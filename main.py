@@ -157,7 +157,15 @@ import pandas as pd
 
 
 
-#2method
+#2me
+
+
+
+hellllllllll
+asdfgddfghj
+dfgfhjkhgfds
+jicicekisqlm
+kiwetry
 
 wertu
 properqqw
@@ -194,3 +202,147 @@ from
 
 
 
+
+# n=121
+# p=n
+# res=0
+# n=121
+# p=n
+# res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0# n=121
+# # p=n
+# # res=0
+
+
+# # res=0# n=121
+# # p=n
+# # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0# # res=0# n=121
+# # # p=n
+# # # res=0
