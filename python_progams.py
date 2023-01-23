@@ -1785,6 +1785,7 @@ from functools import reduce
 #
 from itertools import combinations
 
+
 #
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # total = 10
@@ -2127,8 +2128,21 @@ from itertools import combinations
 # #
 # # print(q.to_string())
 #
-#sort
-s=["c","d","a","b"]
-s.sort()
+# sort
+# s=["c","d","a","b"]
+# s.sort()
+
+def binary(a, b):
+    start = 0
+    end = len(a) - 1
+    while (start <= end):
+        mid = (start + end) // 2
+        if (a[mid] > b):
+            end = mid - 1
+        elif (a[mid] < b):
+            start = mid + 1
+        else:
+            return mid
 
 
+print(binary([1, 2, 3, 4, 5, 6], 6))
