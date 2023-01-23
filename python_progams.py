@@ -1945,12 +1945,6 @@ from itertools import combinations
 # print(" ".join(map(str,res)))
 # max_elem = max([int("".join(elem)) for elem in res])
 # print(max_elem)
-
-sdfghj
-sdfgh
-sadfghsaadf
-hasattr(asdsfgh
-
 ################################################################################################
 
 
@@ -2037,12 +2031,5 @@ print(l)
 #sort
 s=["c","d","a","b"]
 s.sort()
-print(s)
-        sdfhjk
-asdfghj)
 
 
-GangadriYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabali
-
-YarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabali
-Yarrabali
