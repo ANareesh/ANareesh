@@ -157,7 +157,42 @@ import pandas as pd
 
 
 
-#2method
+#2me
+
+
+
+hellllllllll
+asdfgddfghj
+dfgfhjkhgfds
+jicicekisqlm
+kiwetry
+
+wertu
+properqqw
+qer
+wx
+nfh
+hsk
+qwerty
+
+
+
+hiiiiiiiiiiiiiiiiiiiii
+
+
+assert
+wer
+errnoc
+bv
+vb
+types
+bn
+from
+
+
+
+
+
 
 
 
@@ -311,12 +346,3 @@ import pandas as pd
 # # # res=0# # res=0# n=121
 # # # p=n
 # # # res=0
-
-
-
-
-
-
-
-
-

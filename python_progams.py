@@ -2127,34 +2127,12 @@ from itertools import combinations
 # #
 # # print(q.to_string())
 #
-
-def binary(a,b):
-    start =0
-    end=len(a)-1
-    while(start<=end):
-        mid =(start+end)//2
-        if (a[mid]>b):
-            end=mid-1
-        elif (a[mid]<b):
-            start =mid+1
-        else:
-            return mid
-print(binary([1,2,3,4,5],5))
+#sort
+s=["c","d","a","b"]
+s.sort()
 
 
-####oops
-class a:
-    def binary(self,a, b):
-        start = 0
-        end = len(a) - 1
-        while (start <= end):
-            mid = (start + end) // 2
-            if (a[mid] > b):
-                end = mid - 1
-            elif (a[mid] < b):
-                start = mid + 1
-            else:
-                return mid
+GangadriYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabali
 
-q=a()
-q.binary([1,2,3,4,5],5)
+YarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabaliYarrabali
+Yarrabali
