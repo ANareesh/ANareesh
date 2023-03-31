@@ -471,7 +471,7 @@ print(list(s1))
 
 
 
-### first 10 first 10 fibonnaci series
+### 33 first 10 first 10 fibonnaci series
 
 def feb(n):
     if n<=1:
@@ -483,7 +483,7 @@ for i in range(n):
     print(feb(i))
 
 
-###  only keys reverse in a dict
+###  34 only keys reverse in a dict
 
 d={"gfg":4,"is":2,"best":5}
 
@@ -496,7 +496,7 @@ for i,j in zip(a,b):
 print(d1)
 
 
-### target number
+### 35 target number
 
 l=[1,2,3,4,5,6,7,8,9]
 t=10
@@ -506,7 +506,7 @@ for i in l:
             print(i,j)
 
 
-#### if l=[9,9,9] op = [1, 0, 0, 0]
+####  36 if l=[9,9,9] op = [1, 0, 0, 0]
 
 l=[9,9,9]
 x=int("".join(map(str,l)))+1
