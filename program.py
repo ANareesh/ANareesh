@@ -11,6 +11,9 @@
 # # #### 11 factorial of a number
 # # ##  12 find first n prime numbers
 # # ## 13 find key index position key value
+#13.1 to get items in a dictionary
+# 13.2 to get only keys in a dictionary
+## 13.3 to get only values in a dictionary
 # #### 14 json to dict
 # ###  15  is_perfect_number
 # # ####  16 string values repeting
@@ -34,7 +37,7 @@
 # ###  34 only keys reverse in a dict
 # ### 35 target number
 # ####  36 if l=[9,9,9] op = [1, 0, 0, 0]
-#
+#### 37 getting multiple datatypes values in a list
 #
 #
 #
@@ -250,15 +253,38 @@
 # #
 # # ## 13 find key index position key value
 # #
-d = {'a': 2, "b": 3, "c": 4, "d": 3, "e": 3, "k": 1, "p": 0}
-d1 = {}
-for k,v in enumerate(d):
-    print(k, v)
-    if v not in d1:
-        d1[v]=[k]
-    else:
-        [k].append()
-print(d1)
+# d = {'a': 2, "b": 3, "c": 4, "d": 3, "e": 3, "k": 1, "p": 0}
+# d1 = {}
+# for k,v in enumerate(d):
+#     print(k, v)
+#     if v not in d1:
+#         d1[v]=[k]
+#     else:
+#         [k].append()
+# print(d1)
+#
+# #13.1 to get items in a dictionary
+#
+# d1 = {}
+# for k, v in enumerate(d.items()):
+#     print(v)
+#
+# # 13.2 to get only keys in a dictionary
+#
+# d = {'a': 2, "b": 3, "c": 4, "d": 3, "e": 3, "k": 1, "p": 0}
+#
+# d1 = {}
+# for k, v in enumerate(d):
+#     print(v)
+#
+# ## 13.3 to get only values in a dictionary
+#
+# d1={}
+# for k,v in enumerate(d):
+#     q=d[v]
+#     print(q)
+
+
 #
 #
 # #### 14 json to dict
@@ -304,20 +330,20 @@ print(d1)
 # # print("".join(res))
 #
 #
-# ### 17 counting list values into single element
-# # def single(l):
-# #     res = []
-# #     for i in l:
-# #         if type(i) == list:
-# #             res.extend(i)
-# #         else:
-# #             res.append(i)
-# #     for j in res:
-# #         if type(j) == list:
-# #             return single(res)
-# #     else:
-# #         return sum(res)
-# # print(single([1, 2, [2, 3, 4], [2, 3, 4, [4, 5, 6,[2,3]]], 0]))
+# ### 17 counting list  flat listvalues into single element
+# def single(l):
+#     res = []
+#     for i in l:
+#         if type(i) == list:
+#             res.extend(i)
+#         else:
+#             res.append(i)
+#     for j in res:
+#         if type(j) == list:
+#             return single(res)
+#     else:
+#         return sum(res)
+# print(single([1, 2, [2, 3, 4], [2, 3, 4, [4, 5, 6,[2,3]]], 0]))
 # #
 # # ### 18  second max value in a list
 # # l = [1, 2, 3, 4, 5, 6, 7]
@@ -547,15 +573,21 @@ print(d1)
 # # x=int("".join(map(str,l)))+1
 # # print(list(map(int,str(x))))
 #
+
+### 37 getting multiple datatypes values in a list
+# l = [1,2,4,3,(1,2),5,6,"1",4.5,7,{"hi":"1"},{1,2}]
 #
-# l = [[1, 2, 3], [4, 5], [54], [], [6, [7, 8]], 9]
-# l1=[]
-# l2=[l]
-# while l2:
-#     c=l2.pop()
-#     for i in c:
-#         if isinstance(i,list):
-#             l2.append(l)
-#         else:
-#             l1.append(l)
+# l1 = []
+# l2 = {}
+# l3=[]
+#
+# for i in l:
+#     if isinstance(i, str) or isinstance(i, float) or isinstance(i,tuple) or isinstance(i, set):
+#         l1.append(i)
+#     elif isinstance(i, dict):
+#         l2.update(i)
+#     else:
+#         l3.append(i)
 # print(l1)
+# print(l2)
+# print(l3)
