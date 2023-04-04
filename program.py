@@ -20,7 +20,7 @@
 # ### 17 counting list values into single element
 # # ### 18  second max value in a list
 # ### 19 how to find 3rd highest number
-# # #####  20 reapted list values in a list
+# # ##### 20  remove duplicate in a neasted list values in a list
 # #### 21 ip="aaabbbaabbcc" op= 3a3b2a2b2c
 # ###  22 all zeros at end op=[1, 2, 3, 4, 5, 0, 0]
 # ### 23 amstrong  number
@@ -346,14 +346,14 @@
 # print(single([1, 2, [2, 3, 4], [2, 3, 4, [4, 5, 6,[2,3]]], 0]))
 # #
 # # ### 18  second max value in a list
-# # l = [1, 2, 3, 4, 5, 6, 7]
-# # maximum = 0
-# # second_max=0
-# # for i in range(len(l)):
-# #     if maximum < l[i]:
-# #         second_max=maximum
-# #         maximum = l[i]
-# # print(second_max)
+# l = [1, 2, 3, 4, 5, 6, 7]
+# maximum = 0
+# second_max=0
+# for i in range(len(l)):
+#     if maximum < l[i]:
+#         second_max=maximum
+#         maximum = l[i]
+# print(second_max)
 # #
 # ### 19 how to find 3rd highest number
 # # l = [1, 2, 3, 4, 5, 6, 7]
@@ -376,15 +376,50 @@
 # #
 #
 # #
-# # #####  20 reapted list values in a list
-# #
-# # l=[[10, 20], [40], [30, 56, 25], [10, 20], [33], [40]]
-# # res=[]
-# # for sub_list in l:
-# #     if sub_list not in res:
-# #         res.append(sub_list)
-# # print(res)
+# # ##### 20 remove duplicate in a neasted list values in a list
 #
+# l=[[10, 20], [40], [30, 56, 25], [10, 20], [33], [40]]
+# res=[]
+# for sub_list in l:
+#     if sub_list not in res:
+#         res.append(sub_list)
+# print(res)
+#### 20.1 to find only duplacate in a list
+
+# l = [1, 2, 3, 4, 5, 2, 4, 3, 5, 6]
+# d = {}
+# l1= []
+#
+# for i in l:
+#     if i not in d:
+#         d[i] = 1
+#     else:
+#         d[i] += 1
+#         if d[i] == 2:
+#             l1.append(i)
+#
+# print(l1)
+########## 20.2 it will give only removed  element  in multiple datatype in a list
+# from collections.abc import Hashable
+#
+# l = [1, 2, 3, 4, 4, 3, "1", "2", "1", {"1": "1"}, {"1": "1"}, 5, 6]
+# l1 = []
+# d = {}
+#
+# for i in l:
+#     # If i is not hashable, it cannot be a dictionary or a set, so we use str() to convert it to a hashable type
+#     # If i is hashable, we use i directly as the key in the dictionary
+#     key = str(i) if not isinstance(i, Hashable) else i
+#
+#     if key not in d:
+#         d[key] = 1
+#     else:
+#         d[key] += 1
+#         if d[key] == 2:
+#             l1.append(i)
+#
+# print(l1)
+
 #
 #
 # #### 21 ip="aaabbbaabbcc" op= 3a3b2a2b2c
