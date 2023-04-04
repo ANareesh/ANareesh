@@ -531,12 +531,12 @@
 # #
 # # d={578:"Lenin gore",901:"nareesh",111:"are"}
 # #
-# # d1=list(d.items())
-# # for i in range(len(d1)):
-# #     for j in range(i+1,len(d1)):
-# #         if d1[i]>d1[j]:
-# #             d1[i],d1[j]=d1[j],d1[i]
-# # print(d1)
+# d1=list(d.items())
+# for i in range(len(d1)):
+#     for j in range(i+1,len(d1)):
+#         if d1[i]>d1[j]:
+#             d1[i],d1[j]=d1[j],d1[i]
+# print(d1)
 #
 # #### 30 prime numbers
 #
@@ -626,3 +626,55 @@
 # print(l1)
 # print(l2)
 # print(l3)
+
+
+
+###  38 l= ['hello', 'world', 'python']    Output: ['HELLO', 'WORLD', 'PYTHON']
+l= ['hello', 'world', 'python']
+# Output: ['HELLO', 'WORLD', 'PYTHON']
+
+q=list(map(lambda x:x.upper(),l))
+print(q)
+
+### 39 lambda function example program filter map reduce function
+s=lambda a,b:a*b
+print(s(2,2))
+
+l=[1,2,3,4,5,6]
+l1=list(filter(lambda i:i%2==0,l))
+print(l1)
+
+l2=list(map(lambda i:i*i,l))
+print(*l2)
+
+from functools import reduce
+
+l3=reduce(lambda a,b:a+b,l)
+print(l3)
+
+
+###40 l=[1,2,3,4] op={1: 2, 2: 4, 3: 6, 4: 8}
+
+l=[1,2,3,4]
+
+q={e:e*2 for e in l}
+print(q)
+
+#### 41 dict sort values
+
+d = {"a": 4, "b": 7, "c": 1, "d": 3}
+d2 = {}
+while d:
+    q = min(d, key=d.get)
+    d2[q] = d.pop(q)
+print(d2)
+
+### 41.1 sort key dictionary
+d = {"a": 4, "b": 7, "c": 1, "d": 3,"z":34,"r":32}
+d2 = {}
+while d:
+    q = min(d)
+    print(q)
+    d2[q] = d.pop(q)
+print(d2)
+
