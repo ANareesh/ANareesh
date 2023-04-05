@@ -1,3 +1,6 @@
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import letter
+
 # ### 1 flatlist
 # # # 2 non repeted elements
 # # ## 3 binary search
@@ -44,7 +47,7 @@
 #### 41 dict sort values
 ### 41.1 sort key dictionary
 ### 42 l=[1,2,3,4,"are","hi",5,{"hi","fg"}] op=[1,2,3,4,"ARE","HI",5,{"HI","FG"}]
-
+##### 43 in a string of list  or set i want to get list or set  out of string
 
 #
 # ###1 flatlist
@@ -695,7 +698,7 @@
 #        l1.append(i)
 # print(l1)
 
-##### 43 in a string of list i want to get list out of string
+##### 43 in a string of list  or set i want to get list or set  out of string
 
 # import re
 #
@@ -709,3 +712,109 @@
 #
 # print(l1)
 
+
+
+
+
+import re
+
+s = "1,2,3,4,[1,2,3,4],{1,2,3,4}"
+l1 = []
+se=set()
+pattern = r"[\[\{][^\[\]\{\}]*[\]\}]"     ## only list then use this pattern r"\[[^]]*\]", if u want to use both then use this pattern   r"[\[\{][^\[\]\{\}]*[\]\}]"
+for match in re.finditer(pattern, s):
+    obj = eval(match.group())
+    if isinstance(obj, list):
+        l1.append(obj)
+    elif isinstance(obj,set):
+        se.update(obj)
+print("Lists:", l1)
+print(se)
+
+
+##### Fibonacci byusing init,iter,next methods
+class Fibonacci:
+    def __init__(self, n):
+        self.n = n
+        self.current = 0
+        self.next = 1
+        self.count = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.count >= self.n:
+            raise StopIteration
+        result = self.current
+        self.current, self.next = self.next, self.current + self.next
+        self.count += 1
+        return result
+q = Fibonacci(10)
+for i in q:
+    print(i)
+
+
+
+
+
+
+
+
+
+
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import letter
+
+pdf_file = canvas.Canvas("output.pdf", pagesize=letter)
+pdf_file.setTitle("My Python Programs")
+
+with open("program.py", "r") as f:
+    content = f.readlines()
+
+line_count = 0  # Counter for the number of lines on the current page
+y_position = 750  # Starting y position for the first line of content
+
+for line in content:
+    pdf_file.drawString(100, y_position, line.strip())  # Use strip() to remove the newline character
+    y_position -= 20  # Move down 20 points for the next line
+    line_count += 1
+
+    if line_count == 50:  # Start a new page after 50 lines
+        pdf_file.showPage()
+        line_count = 0  # Reset the line count
+        y_position = 750  # Reset the y position
+
+# If the last page is not filled completely, add a new page to avoid blank space
+if line_count > 0:
+    pdf_file.showPage()
+
+pdf_file.save()
+
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import letter
+
+pdf_file = canvas.Canvas("output.pdf", pagesize=letter)
+pdf_file.setTitle("My Python Programs")
+
+with open("program.py", "r") as f:
+    content = f.readlines()
+
+line_count = 0  # Counter for the number of lines on the current page
+y_position = 750  # Starting y position for the first line of content
+
+for line in content:
+    pdf_file.drawString(100, y_position, line.strip())  # Use strip() to remove the newline character
+    y_position -= 20  # Move down 20 points for the next line
+    line_count += 1
+
+    if line_count == 50:  # Start a new page after 50 lines
+        pdf_file.showPage()
+        line_count = 0  # Reset the line count
+        y_position = 750  # Reset the y position
+
+# If the last page is not filled completely, add a new page to avoid blank space
+if line_count > 0:
+    pdf_file.showPage()
+
+pdf_file.save()
