@@ -38,9 +38,14 @@
 # ### 35 target number
 # ####  36 if l=[9,9,9] op = [1, 0, 0, 0]
 #### 37 getting multiple datatypes values in a list
-#
-#
-#
+####  38 l= ['hello', 'world', 'python']    Output: ['HELLO', 'WORLD', 'PYTHON']
+#### 39 lambda function example program filter map reduce function
+####40 l=[1,2,3,4] op={1: 2, 2: 4, 3: 6, 4: 8}
+#### 41 dict sort values
+### 41.1 sort key dictionary
+### 42 l=[1,2,3,4,"are","hi",5,{"hi","fg"}] op=[1,2,3,4,"ARE","HI",5,{"HI","FG"}]
+
+
 #
 # ###1 flatlist
 # # l = [[1, 2, 3], [4, 5], [54], [], [6, [7, 8]], 9]
@@ -630,51 +635,77 @@
 
 
 ###  38 l= ['hello', 'world', 'python']    Output: ['HELLO', 'WORLD', 'PYTHON']
-l= ['hello', 'world', 'python']
-# Output: ['HELLO', 'WORLD', 'PYTHON']
-
-q=list(map(lambda x:x.upper(),l))
-print(q)
+# l= ['hello', 'world', 'python']
+# # Output: ['HELLO', 'WORLD', 'PYTHON']
+#
+# q=list(map(lambda x:x.upper(),l))
+# print(q)
 
 ### 39 lambda function example program filter map reduce function
-s=lambda a,b:a*b
-print(s(2,2))
-
-l=[1,2,3,4,5,6]
-l1=list(filter(lambda i:i%2==0,l))
-print(l1)
-
-l2=list(map(lambda i:i*i,l))
-print(*l2)
-
-from functools import reduce
-
-l3=reduce(lambda a,b:a+b,l)
-print(l3)
+# s=lambda a,b:a*b
+# print(s(2,2))
+#
+# l=[1,2,3,4,5,6]
+# l1=list(filter(lambda i:i%2==0,l))
+# print(l1)
+#
+# l2=list(map(lambda i:i*i,l))
+# print(*l2)
+#
+# from functools import reduce
+#
+# l3=reduce(lambda a,b:a+b,l)
+# print(l3)
 
 
 ###40 l=[1,2,3,4] op={1: 2, 2: 4, 3: 6, 4: 8}
 
-l=[1,2,3,4]
-
-q={e:e*2 for e in l}
-print(q)
+# l=[1,2,3,4]
+#
+# q={e:e*2 for e in l}
+# print(q)
 
 #### 41 dict sort values
 
-d = {"a": 4, "b": 7, "c": 1, "d": 3}
-d2 = {}
-while d:
-    q = min(d, key=d.get)
-    d2[q] = d.pop(q)
-print(d2)
+# d = {"a": 4, "b": 7, "c": 1, "d": 3}
+# d2 = {}
+# while d:
+#     q = min(d, key=d.get)
+#     d2[q] = d.pop(q)
+# print(d2)
 
 ### 41.1 sort key dictionary
-d = {"a": 4, "b": 7, "c": 1, "d": 3,"z":34,"r":32}
-d2 = {}
-while d:
-    q = min(d)
-    print(q)
-    d2[q] = d.pop(q)
-print(d2)
+# d = {"a": 4, "b": 7, "c": 1, "d": 3,"z":34,"r":32}
+# d2 = {}
+# while d:
+#     q = min(d)
+#     print(q)
+#     d2[q] = d.pop(q)
+# print(d2)
+### 42 l=[1,2,3,4,"are","hi",5,{"hi","fg"}] op=[1,2,3,4,"ARE","HI",5,{"HI","FG"}]
+
+# l=[1,2,3,4,"are","hi",5,{"hi","fg"}]
+# op=[1,2,3,4,"ARE","HI",5,{"HI","FG"}]
+# l1=[]
+#
+# for i in l:
+#     if isinstance(i,str) or isinstance(i,set):
+#         l1.append(str(i).upper())
+#     else:
+#        l1.append(i)
+# print(l1)
+
+##### 43 in a string of list i want to get list out of string
+
+# import re
+#
+# s = "1,2,3,4,[1,2,3,4]"
+# l1 = []
+#
+# pattern = r"\[[^]]*\]"
+# for match in re.finditer(pattern, s):
+#     lst = eval(match.group())
+#     l1.append(lst)
+#
+# print(l1)
 
