@@ -48,6 +48,16 @@ from reportlab.lib.pagesizes import letter
 ### 41.1 sort key dictionary
 ### 42 l=[1,2,3,4,"are","hi",5,{"hi","fg"}] op=[1,2,3,4,"ARE","HI",5,{"HI","FG"}]
 ##### 43 in a string of list  or set i want to get list or set  out of string
+###44 i want to separate list values and set values in a string
+##### 45 Fibonacci byusing init,iter,next methods
+## 46 find the maximum length of consecutive zero's in a binary string
+
+
+
+
+
+
+
 
 #
 # ###1 flatlist
@@ -84,19 +94,19 @@ from reportlab.lib.pagesizes import letter
 #
 #
 #
-# # l=[9, 6, 7, 8,1,2,3,4,2,3,1,3]
-# # c={}
-# # l1=[]
-# # for i in l:
-# #     if i in c:
-# #         c[i]+=1
-# #     else:
-# #         c[i]=1
-# # print(c)
-# # for j,count in c.items():
-# #     if count==1:
-# #         l1.append(j)
-# # print(l1)
+# l=[9, 6, 7, 8,1,2,3,4,2,3,1,3]
+# c={}
+# l1=[]
+# for i in l:
+#     if i in c:
+#         c[i]+=1
+#     else:
+#         c[i]=1
+# print(c)
+# for j,count in c.items():
+#     if count==1:
+#         l1.append(j)
+# print(l1)
 # #
 # # ## 3 binary search
 # #
@@ -364,23 +374,25 @@ from reportlab.lib.pagesizes import letter
 # print(second_max)
 # #
 # ### 19 how to find 3rd highest number
-# # l = [1, 2, 3, 4, 5, 6, 7]
-# # max1 = max2 = max3 = float('-inf')
-# # for i in l:
-# #     # Update the maximum value if we find a new maximum
-# #     if i > max1:
-# #         max3 = max2
-# #         max2 = max1
-# #         max1 = i
-# #     # Update the second maximum value if we find a new second maximum
-# #     elif i > max2:
-# #         max3 = max2
-# #         max2 = i
-# #     # Update the third maximum value if we find a new third maximum
-# #     elif i > max3:
-# #         max3 = i
-# #
-# # print(max3)
+# l = [1, 2, 3, 4, 5, 6, 7]
+# max1=0
+# max2=0
+# max3=0
+# for i in l:
+#     # Update the maximum value if we find a new maximum
+#     if i > max1:
+#         max3 = max2
+#         max2 = max1
+#         max1 = i
+#     # Update the second maximum value if we find a new second maximum
+#     elif i > max2:
+#         max3 = max2
+#         max2 = i
+#     # Update the third maximum value if we find a new third maximum
+#     elif i > max3:
+#         max3 = i
+#
+# print(max2)
 # #
 #
 # #
@@ -713,7 +725,7 @@ from reportlab.lib.pagesizes import letter
 # print(l1)
 
 
-
+###44 i want to separate list values and set values in a string
 
 
 import re
@@ -728,34 +740,64 @@ for match in re.finditer(pattern, s):
         l1.append(obj)
     elif isinstance(obj,set):
         se.update(obj)
-print("Lists:", l1)
+print(l1)
 print(se)
 
 
-##### Fibonacci byusing init,iter,next methods
-class Fibonacci:
-    def __init__(self, n):
-        self.n = n
-        self.current = 0
-        self.next = 1
-        self.count = 0
+##### 45 Fibonacci byusing init,iter,next methods
+# class Fibonacci:
+#     def __init__(self, n):
+#         self.n = n
+#         self.current = 0
+#         self.next = 1
+#         self.count = 0
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         if self.count >= self.n:
+#             raise StopIteration
+#         result = self.current
+#         self.current, self.next = self.next, self.current + self.next
+#         self.count += 1
+#         return result
+# q = Fibonacci(10)
+# for i in q:
+#     print(i)
 
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        if self.count >= self.n:
-            raise StopIteration
-        result = self.current
-        self.current, self.next = self.next, self.current + self.next
-        self.count += 1
-        return result
-q = Fibonacci(10)
-for i in q:
-    print(i)
+## 46 find the maximum length of consecutive zero's in a binary string
 
 
+# WAP to find the maximum length of consecutive zero's in a binary string. Also, find the starting index of the first zero in that substring.
 
+
+# Input string :   "00010100"
+# Expected output :  max length of consecutive zero's is 3, starts at index 0
+# Input string :
+# Expected output :  max length of consecutive zero's is 4, starts at index 6
+
+
+# def bin(s):
+#     max = 0
+#     current_len = 0
+#     start_index = -1
+#     for i in range(len(s)):
+#         if s[i] == "0":
+#             current_len += 1
+#             if current_len > max:
+#                 max = current_len
+#                 start_index = i - max + 1
+#         else:
+#             current_len = 0
+#     return (max, start_index)
+#
+#
+# # q="00010100"
+# q = "10100100001"
+# # qq=bin(q)
+# max, start_index = bin(q)
+# print(max, start_index)
 
 
 
