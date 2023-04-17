@@ -51,6 +51,10 @@ from reportlab.lib.pagesizes import letter
 ###44 i want to separate list values and set values in a string
 ##### 45 Fibonacci byusing init,iter,next methods
 ## 46 find the maximum length of consecutive zero's in a binary string
+### 47 If you want to see only the migrations that have not been applied yet, run
+
+# 48 str1 = "abcde"# if n=5 than output will be "abcde"# if n=3 than "abc"# if n=7 than "abcdeab"if n=11 than "abcdeabcdea"# if n=15 than "abcdeabcdeabcde"
+
 
 
 
@@ -798,6 +802,33 @@ print(se)
 # # qq=bin(q)
 # max, start_index = bin(q)
 # print(max, start_index)
+
+
+
+
+### 47 If you want to see only the migrations that have not been applied yet, run:
+
+
+# python manage.py showmigrations --list | grep "\[ \]"
+
+
+#48 str1 = "abcde"# if n=5 than output will be "abcde"# if n=3 than "abc"# if n=7 than "abcdeab"if n=11 than "abcdeabcdea"# if n=15 than "abcdeabcdeabcde"
+
+# str1 = "abcde"
+# n=int(input("enter str"))
+# if n<=len(str1):
+#     q=str1[:n:-1]
+# else:
+#     num=n//len(str1)
+#     r=n%len(str1)
+#     q=str1*num+str1[:r]
+# print(q)
+
+
+
+
+
+
 
 
 
