@@ -828,28 +828,16 @@ print(se)
 ###49 input "my name is nareesh"  output=NAREESH IS NAME MY
 
 
+s=input("enter str")
+l=s.split()
+l1=[]
+i=len(l)-1
+while i>=0:
+    l1.append(l[i])
+    i=i-1
+q=' '.join(l1).upper()
+print(q)
 
-# Define a function to convert a lowercase character to uppercase
-def to_uppercase(char):
-    if 'a' <= char <= 'z':
-        return chr(ord(char) - 32)
-    else:
-        return char
-
-# Initialize variables
-input_str = "my name is nareesh"
-output = ''
-
-# Split the input string into words and reverse them
-words = input_str.split()[::-1]
-
-# Convert each word to uppercase
-uppercase_words = [''.join([to_uppercase(char) for char in word[::1]]) for word in words]
-
-# Join the list of uppercase words into a string
-output = ' '.join(uppercase_words)
-
-print(output)
 
 
 
