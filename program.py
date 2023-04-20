@@ -54,7 +54,7 @@ from reportlab.lib.pagesizes import letter
 ### 47 If you want to see only the migrations that have not been applied yet, run
 
 # 48 str1 = "abcde"# if n=5 than output will be "abcde"# if n=3 than "abc"# if n=7 than "abcdeab"if n=11 than "abcdeabcdea"# if n=15 than "abcdeabcdeabcde"
-
+###49 input "my name is nareesh"  output=NAREESH IS NAME MY
 
 
 
@@ -825,9 +825,31 @@ print(se)
 # print(q)
 
 
+###49 input "my name is nareesh"  output=NAREESH IS NAME MY
 
 
 
+# Define a function to convert a lowercase character to uppercase
+def to_uppercase(char):
+    if 'a' <= char <= 'z':
+        return chr(ord(char) - 32)
+    else:
+        return char
+
+# Initialize variables
+input_str = "my name is nareesh"
+output = ''
+
+# Split the input string into words and reverse them
+words = input_str.split()[::-1]
+
+# Convert each word to uppercase
+uppercase_words = [''.join([to_uppercase(char) for char in word[::1]]) for word in words]
+
+# Join the list of uppercase words into a string
+output = ' '.join(uppercase_words)
+
+print(output)
 
 
 
