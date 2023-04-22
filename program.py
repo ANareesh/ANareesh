@@ -976,4 +976,88 @@ q.method_A()
 w=A()
 w.method_A()
 
+### encapsulation
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self._account_number = account_number
+        self._balance = balance
+
+    def deposit(self, amount):
+        self._balance += amount
+
+    def withdraw(self, amount):
+        if self._balance >= amount:
+            self._balance -= amount
+        else:
+            print("Insufficient balance.")
+
+    def get_balance(self):
+        return self._balance
+# Create a new bank account with account number 123 and balance 1000.
+account = BankAccount(123, 1000)
+
+# Deposit 500 into the account.
+account.deposit(500)
+
+# Withdraw 200 from the account.
+account.withdraw(200)
+
+# Print the current balance.
+print("Current balance:", account.get_balance())
+
+### static methoh
+
+class stme:
+    @staticmethod
+    def add(x,y):
+        print("sum",x+y)
+    @staticmethod
+    def div(x,y):
+        print("div",x*y)
+    @staticmethod
+    def avg(x,y):
+        print("avg",(x+y)/2)
+
+
+stme.avg(5,5)
+
+
+
+
+
+###51 even odd prime pali
+
+
+l=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]
+def find(l):
+    odd=[]
+    even=[]
+    prime=[]
+    pali=[]
+    for i in l:
+        if i%2==0:
+            even.append(i)
+        else:
+            odd.append(i)
+        is_prime=True
+        if i<2:
+            is_prime=False
+        for j in range(2,int(i**0.5)+1):
+            if i%j==0:
+                is_prime=False
+                break
+        if is_prime:
+            prime.append(i)
+        if str(i)==str(i)[::-1]:
+            pali.append(i)
+    return {
+        "even":even,
+        "odd": odd,
+        "prime":prime,
+        "pali":pali
+        }
+
+q=find(l)
+print(q)
+
 
