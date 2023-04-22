@@ -14,7 +14,7 @@ from reportlab.lib.pagesizes import letter
 # # #### 11 factorial of a number
 # # ##  12 find first n prime numbers
 # # ## 13 find key index position key value
-#13.1 to get items in a dictionary
+# 13.1 to get items in a dictionary
 # 13.2 to get only keys in a dictionary
 ## 13.3 to get only values in a dictionary
 # #### 14 json to dict
@@ -55,13 +55,7 @@ from reportlab.lib.pagesizes import letter
 
 # 48 str1 = "abcde"# if n=5 than output will be "abcde"# if n=3 than "abc"# if n=7 than "abcdeab"if n=11 than "abcdeabcdea"# if n=15 than "abcdeabcdeabcde"
 ###49 input "my name is nareesh"  output=NAREESH IS NAME MY
-
-
-
-
-
-
-
+###  50 oops
 
 #
 # ###1 flatlist
@@ -652,7 +646,6 @@ from reportlab.lib.pagesizes import letter
 # print(l3)
 
 
-
 ###  38 l= ['hello', 'world', 'python']    Output: ['HELLO', 'WORLD', 'PYTHON']
 # l= ['hello', 'world', 'python']
 # # Output: ['HELLO', 'WORLD', 'PYTHON']
@@ -736,17 +729,16 @@ import re
 
 s = "1,2,3,4,[1,2,3,4],{1,2,3,4}"
 l1 = []
-se=set()
-pattern = r"[\[\{][^\[\]\{\}]*[\]\}]"     ## only list then use this pattern r"\[[^]]*\]", if u want to use both then use this pattern   r"[\[\{][^\[\]\{\}]*[\]\}]"
+se = set()
+pattern = r"[\[\{][^\[\]\{\}]*[\]\}]"  ## only list then use this pattern r"\[[^]]*\]", if u want to use both then use this pattern   r"[\[\{][^\[\]\{\}]*[\]\}]"
 for match in re.finditer(pattern, s):
     obj = eval(match.group())
     if isinstance(obj, list):
         l1.append(obj)
-    elif isinstance(obj,set):
+    elif isinstance(obj, set):
         se.update(obj)
 print(l1)
 print(se)
-
 
 ##### 45 Fibonacci byusing init,iter,next methods
 # class Fibonacci:
@@ -804,15 +796,13 @@ print(se)
 # print(max, start_index)
 
 
-
-
 ### 47 If you want to see only the migrations that have not been applied yet, run:
 
 
 # python manage.py showmigrations --list | grep "\[ \]"
 
 
-#48 str1 = "abcde"# if n=5 than output will be "abcde"# if n=3 than "abc"# if n=7 than "abcdeab"if n=11 than "abcdeabcdea"# if n=15 than "abcdeabcdeabcde"
+# 48 str1 = "abcde"# if n=5 than output will be "abcde"# if n=3 than "abc"# if n=7 than "abcdeab"if n=11 than "abcdeabcdea"# if n=15 than "abcdeabcdeabcde"
 
 # str1 = "abcde"
 # n=int(input("enter str"))
@@ -828,25 +818,16 @@ print(se)
 ###49 input "my name is nareesh"  output=NAREESH IS NAME MY
 
 
-s=input("enter str")
-l=s.split()
-l1=[]
-i=len(l)-1
-while i>=0:
+s = input("enter str")
+l = s.split()
+l1 = []
+i = len(l) - 1
+while i >= 0:
     l1.append(l[i])
-    i=i-1
-q=' '.join(l1).upper()
+    i = i - 1
+q = ' '.join(l1).upper()
 print(q)
 
-
-
-
-
-
-
-
-
-
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 
@@ -902,3 +883,97 @@ if line_count > 0:
     pdf_file.showPage()
 
 pdf_file.save()
+
+
+
+###  50 oops
+
+######### 1 single inheritance
+# class P:
+#     def m1(self):
+#         print("p class")
+# class C:
+#     def m1(self):
+#         print("C class")
+#
+# c=C()
+# c.m1()
+# p=P()
+# p.m1()
+
+
+
+
+######## 2 multi level inheritan
+class P:
+    def m1(self):
+        print("A")
+class C(P):
+    def m2(self):
+        print("B")
+class CC(C):
+    def m3(self):
+        print("c")
+
+c=P()
+c.m1()
+
+q=C()
+q.m2()
+q.m1()
+
+w=CC()
+w.m2()
+w.m3()
+w.m1()
+
+
+#### 3 hierarchical inheritance
+
+class P:
+    def m1(self):
+        print("a")
+class C1(P):
+    def m2(self):
+        print("b")
+class C2(P):
+    def m3(self):
+        print("b1")
+
+c=C1()
+c.m1()
+c.m2()
+
+q=C2()
+q.m3()
+q.m1()
+
+
+
+
+
+
+
+###multiple inheritance
+class A:
+    def method_A(self):
+        print("This is method A")
+
+class B:
+    def method_A(self):
+        print("This is method B")
+
+class C(B,A):
+   print(" this method c")
+
+
+c = C()
+c.method_A()
+
+q=B()
+q.method_A()
+
+w=A()
+w.method_A()
+
+

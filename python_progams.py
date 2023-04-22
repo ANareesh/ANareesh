@@ -2146,3 +2146,110 @@ def binary(a, b):
 
 
 print(binary([1, 2, 3, 4, 5, 6], 6))
+
+
+
+# class A:
+#     def method_A(self):
+#         print("This is method A")
+#
+# class B(A):
+#     def method_A(self):
+#         print("This is method B")
+#
+# class C(B):
+#     def method_A(self):
+#         print("This is method C")
+#
+#
+# c = C()
+# c.method_A()
+
+######### 1 single inheritance
+# class P:
+#     def m1(self):
+#         print("p class")
+# class C:
+#     def m1(self):
+#         print("C class")
+#
+# c=C()
+# c.m1()
+# p=P()
+# p.m1()
+
+
+
+
+######## 2 multi level inheritan
+class P:
+    def m1(self):
+        print("A")
+class C(P):
+    def m2(self):
+        print("B")
+class CC(C):
+    def m3(self):
+        print("c")
+
+c=P()
+c.m1()
+
+q=C()
+q.m2()
+q.m1()
+
+w=CC()
+w.m2()
+w.m3()
+w.m1()
+
+
+#### 3 hierarchical inheritance
+
+class P:
+    def m1(self):
+        print("a")
+class C1(P):
+    def m2(self):
+        print("b")
+class C2(P):
+    def m3(self):
+        print("b1")
+
+c=C1()
+c.m1()
+c.m2()
+
+q=C2()
+q.m3()
+q.m1()
+
+
+
+
+
+
+
+###multiple inheritance
+class A:
+    def method_A(self):
+        print("This is method A")
+
+class B:
+    def method_A(self):
+        print("This is method B")
+
+class C(B,A):
+   print(" this method c")
+
+
+c = C()
+c.method_A()
+
+q=B()
+q.method_A()
+
+w=A()
+w.method_A()
+
