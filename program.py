@@ -1061,3 +1061,76 @@ q=find(l)
 print(q)
 
 
+
+def tar(l,target):
+    start=-1
+    end=-1
+    
+    for i in range(len(l)):
+        if l[i]==target:
+            start=i
+            break
+        
+    if start !=-1:
+        for j in range(len(l)-1,-1,-1):
+            if l[j]==target:
+                end=j
+                break
+    if start !=-1 and end !=-1:
+        return start,end
+    else:
+        return -1
+
+l=[5,7,7,8,7,10]       
+target=7
+q=tar(l,target)
+print(q)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
