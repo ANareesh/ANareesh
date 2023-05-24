@@ -56,6 +56,7 @@ from reportlab.lib.pagesizes import letter
 # 48 str1 = "abcde"# if n=5 than output will be "abcde"# if n=3 than "abc"# if n=7 than "abcdeab"if n=11 than "abcdeabcdea"# if n=15 than "abcdeabcdeabcde"
 ###49 input "my name is nareesh"  output=NAREESH IS NAME MY
 ###  50 oops
+#####51 in even odd prime numbers
 
 #
 # ###1 flatlist
@@ -1085,7 +1086,27 @@ l=[5,7,7,8,7,10]
 target=7
 q=tar(l,target)
 print(q)
-        
+
+#####51 in even odd prime numbers
+
+q=int(input("enter number"))
+l1=[]
+l2=[]
+for i in range(1,q):
+    for j in range(2,i):
+        if (i%j==0):
+            break
+    else:
+        if i%2==0:
+            l1.append(i)
+        elif i%2==1:
+            l2.append(i)
+        print(i)
+print(l1)
+print(l2)
+
+
+
         
         
         
