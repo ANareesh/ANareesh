@@ -57,6 +57,7 @@ from reportlab.lib.pagesizes import letter
 ###49 input "my name is nareesh"  output=NAREESH IS NAME MY
 ###  50 oops
 #####51 in even odd prime numbers
+## 52 dict alteranavit reverse changing
 
 #
 # ###1 flatlist
@@ -1105,6 +1106,22 @@ for i in range(1,q):
 print(l1)
 print(l2)
 
+
+## 52 dict alteranavit reverse changing
+
+d = {"hi": "10", "ht": "20", "iu": "30", "ar": "40","jk":"50"}
+
+reversed_d = {}
+keys = list(d.keys())
+values = list(d.values())
+
+for i in range(len(keys)):
+    if i % 2 == 0:
+        reversed_d[keys[i][::-1]] = values[i][::1]
+    else:
+        reversed_d[keys[i][::1]] = values[i][::-1]
+
+print(reversed_d)
 
 
         
