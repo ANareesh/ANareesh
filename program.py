@@ -620,6 +620,18 @@ from reportlab.lib.pagesizes import letter
 #     for j in l:
 #         if i+j==10:
 #             print(i,j)
+
+#  ######### another way for target number with count 
+# l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# t = 10
+# count = 0
+
+# for i in l:
+#     for j in l:
+#         if i + j == 10:
+#             count += 1
+
+# print(count)
 #
 #
 # ####  36 if l=[9,9,9] op = [1, 0, 0, 0]
